@@ -24,6 +24,7 @@ namespace LongestPalindromicSubstring
 
                     if (i == j)
                         dp[j, i] = true;
+
                     else if (i == j + 1)
                         dp[j, i] = (flag ? true : false);
 
