@@ -8,6 +8,7 @@ namespace median
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
             int m = nums1.Length, n = nums2.Length;
+
             if (m == 0)
             {
                 if (n % 2 == 1)
