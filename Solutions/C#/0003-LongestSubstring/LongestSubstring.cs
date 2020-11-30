@@ -13,6 +13,7 @@ namespace longestSubstring
 
             int i = 0;
             char temp;
+
             while (i < s.Length)
             {
                 temp = s[i];
