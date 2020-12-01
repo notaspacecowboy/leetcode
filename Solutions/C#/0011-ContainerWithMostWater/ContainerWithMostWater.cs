@@ -13,7 +13,6 @@ namespace ContainerWithMostWater
             while (i < j)
             {
                 int currentArea = (j - i) * (height[i] > height[j] ? height[j] : height[i]);
-
                 if (currentArea > max)
                     max = currentArea;
 
