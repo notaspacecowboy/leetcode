@@ -11,6 +11,7 @@ namespace ZigZagConversion
 
             string ans = "";
             bool flag;
+
             for (int i = 0; i < numRows; i++)
             {
                 flag = false;
