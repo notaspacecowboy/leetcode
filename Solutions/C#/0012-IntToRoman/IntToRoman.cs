@@ -8,8 +8,8 @@ namespace IntToRoman
         public string IntToRoman(int num)
         {
             int[] digit = { 1, 5, 10, 50, 100, 500, 1000 };
+           
             string symbol = "IVXLCDM";
-
             string result = "";
 
             int i = digit.Length - 1;
