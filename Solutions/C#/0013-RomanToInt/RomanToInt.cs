@@ -12,7 +12,7 @@ namespace RomanToInt
             return FindSum(s, 0, symbol.Length - 1);
         }
 
-        public int FindSum(string s, int i, int j) 
+        public int FindSum(string s, int i, int j)  
         {
             if (i >= s.Length)
                 return 0;
