@@ -2,7 +2,7 @@ using System;
 
 namespace LongestCommonPrefix
 {
-    public class Solution
+    public class Solution 
     {
         public string LongestCommonPrefix(string[] strs)
         {
