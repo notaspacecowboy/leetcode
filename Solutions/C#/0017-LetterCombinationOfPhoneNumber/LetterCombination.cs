@@ -42,7 +42,7 @@ namespace LetterCombinationOfPhoneNumber
                 return ans;
         }
 
-        void SearchPossibleCombination(string current, string digits, int position)
+        void SearchPossibleCombination(string current, string digits, int position) 
         {
             Console.WriteLine(current);
             if (digits.Length <= position)
