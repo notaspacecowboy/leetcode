@@ -5,7 +5,7 @@ namespace implementStrStr
 {
     public class Solution
     {
-        private List<int> next = new List<int>();
+        private List<int> next = new List<int>(); 
         public int StrStr(string haystack, string needle)
         {
             GetNext(needle);
