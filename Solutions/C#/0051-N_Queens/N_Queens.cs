@@ -14,7 +14,7 @@ namespace N_Queens
     }
 
 
-    public class Solution
+    public class Solution 
     {
         private IList<IList<string>> ans = new List<IList<string>>();
         private bool[] row;
