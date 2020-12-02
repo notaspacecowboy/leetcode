@@ -10,7 +10,7 @@ namespace GroupAnagrams
         IList<IList<string>> ans = new List<IList<string>>();
         Dictionary<string, List<int>> positionDic = new Dictionary<string, List<int>>();
 
-        public IList<IList<string>> GroupAnagrams(string[] strs)
+        public IList<IList<string>> GroupAnagrams(string[] strs) 
         {
             for (int i = 0; i < strs.Length; i++)
             {
