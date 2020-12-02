@@ -6,7 +6,7 @@ namespace ValidParenthesis
 {
     public class Solution
     {
-        private Dictionary<char, char> coSymbol = new Dictionary<char, char>();
+        private Dictionary<char, char> coSymbol = new Dictionary<char, char>(); 
 
         public bool IsValid(string s)
         {
