@@ -12,7 +12,7 @@ namespace LongestValidParentheses
         /// element of string s
         /// </summary>
         public int[] dp;     
-        public int LongestValidParentheses(string s)
+        public int LongestValidParentheses(string s) 
         {
             int max = 0;
             dp = new int[s.Length];
