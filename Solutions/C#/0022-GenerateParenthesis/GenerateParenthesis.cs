@@ -5,7 +5,7 @@ namespace GenerateParenthesis
     public class Solution
     {
         public List<string> ans = new List<string>();
-        public IList<string> GenerateParenthesis(int n)
+        public IList<string> GenerateParenthesis(int n) 
         {
             if (n == 0)
                 return ans;
