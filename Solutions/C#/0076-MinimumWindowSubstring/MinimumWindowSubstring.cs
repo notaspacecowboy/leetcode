@@ -8,7 +8,7 @@ namespace MinimumWindowSubstring
     class Program
     {
         static void Main(string[] args)
-        {
+        { 
             Solution s = new Solution();
             Console.WriteLine(s.MinWindow("cabwefgewcwaefgcf","cae"));
         }
