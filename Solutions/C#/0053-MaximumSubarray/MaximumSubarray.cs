@@ -6,7 +6,7 @@ namespace MaximumSubarray
     {
         public int MaxSubArray(int[] nums)
         {
-            int[] dp = new int[nums.Length];
+            int[] dp = new int[nums.Length]; 
 
             dp[0] = nums[0];
 
