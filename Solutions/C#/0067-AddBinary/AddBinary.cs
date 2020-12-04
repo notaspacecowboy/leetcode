@@ -8,7 +8,7 @@ namespace AddBinary
         {
             string ans = "";
             int carry = 0;
-
+             
             int i = a.Length - 1;
             int j = b.Length - 1;
 
