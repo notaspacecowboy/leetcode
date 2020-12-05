@@ -4,20 +4,12 @@ using System.Diagnostics;
 
 namespace DivideTwoIntegers
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Solution s = new Solution();
-            Console.WriteLine(s.Divide(-1384904293
-                                       ,-153821790));
-        }
-    }
-
     public class Solution
     {
         private Stack<int> result = new Stack<int>();
         private Stack<int> multiplier = new Stack<int>();
+        
+        //this solution is really bad, will work on it later
         public int Divide(int dividend, int divisor)
         {
             bool flag = false;
