@@ -4,7 +4,7 @@ public class Solution
     {
         int[] ans = { -1, -1 };
         if (nums.Length == 0)
-        {
+        { 
             return ans;
         }
 
