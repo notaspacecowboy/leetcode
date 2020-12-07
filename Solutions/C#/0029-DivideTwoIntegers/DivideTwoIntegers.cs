@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace DivideTwoIntegers
+namespace DivideTwoIntegers 
 {
     public class Solution
     {
