@@ -3,15 +3,14 @@ using System.Collections.Generic;
 int[] TwoSum(int[] nums, int target)
 {
     var numDic = new Dictionary<int, int>();
-    int index = -1, secondNum = -1;
     for (int i = 0; i < nums.Length; i++)
     {
-        secondNum = target - nums[i];
-        if (numDic.TryGetValue(secondNum, out index))
+        int secondNum = target - nums[i];
+        if (numDic.TryGetValue(secondNum, out int index))
         {
             return new int[] {index, i};
         }
-        else
+        else if(!numDic.ContainsKey(nums[i]))
         {
             numDic.Add(nums[i], i);
         }
