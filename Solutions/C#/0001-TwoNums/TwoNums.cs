@@ -1,32 +1,21 @@
-using System;
 using System.Collections.Generic;
 
-namespace TwoNums
+int[] TwoSum(int[] nums, int target)
 {
-    public class Solution
+    var numDic = new Dictionary<int, int>();
+    int index = -1, secondNum = -1;
+    for (int i = 0; i < nums.Length; i++)
     {
-        public int[] TwoSum(int[] nums, int target)
+        secondNum = target - nums[i];
+        if (numDic.TryGetValue(secondNum, out index))
         {
-            Dictionary<int, int> numDic = new Dictionary<int, int>();
-            for (int i = 0; i < nums.Length; i++)
-            {
-                numDic[nums[i]] = i;
-            }
-
-            int secondNum;
-            int[] ans = new int[2];
-            for (int i = 0; i < nums.Length; i++)
-            {
-                secondNum = target - nums[i];
-                if (numDic.ContainsKey(secondNum) && numDic[secondNum] != i)
-                {
-                    ans[0] = i;
-                    ans[1] = numDic[secondNum];
-                    break;
-                }
-            }
-
-            return ans;
+            return new int[] {index, i};
+        }
+        else
+        {
+            numDic.Add(nums[i], i);
         }
     }
+
+    return new int[] {-1, -1};      //should never get to here
 }
