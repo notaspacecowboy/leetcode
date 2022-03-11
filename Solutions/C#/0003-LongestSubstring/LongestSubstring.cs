@@ -5,45 +5,35 @@ namespace longestSubstring
 {
     public class Solution
     {
-        public int LengthOfLongestSubstring(string s)
+    public int LengthOfLongestSubstring(string s)
+    {
+        var charLastSeenDic = new Dictionary<char, int>();
+        int longest = 0;
+        int acc = 0;
+
+        for (int i = 0; i < s.Length; i++)
         {
-            Dictionary<char, bool> mDic = new Dictionary<char, bool>();
-            string currentString = "";
-            int longestRun = 0;
-
-            int i = 0;
-            char temp;
-
-            while (i < s.Length)
+            if (charLastSeenDic.TryGetValue(s[i], out int index))   
             {
-                temp = s[i];
-                if (!mDic.ContainsKey(temp) || !mDic[temp])
-                {
-                    mDic[temp] = true;
-                    currentString += temp;
+                if(index >= i - acc) {      //if char s[i] is actually in our currently "maintained" substring s[i - acc, i - 1], 
+                    acc = i - index;        //s' = s[i - index, i]
                 }
-                else
-                {
-                    if (currentString.Length > longestRun)
-                        longestRun = currentString.Length;
-
-                    currentString += temp;
-                    int cutoff = 0;
-                    for (int j = 0; currentString[j] != temp; j++)
-                    {
-                        cutoff++;
-                        mDic[currentString[j]] = false;
-                    }
-                    currentString = currentString.Substring(cutoff + 1);
-
+                else {
+                    acc++;
                 }
-                i++;
+                charLastSeenDic[s[i]] = i;
             }
-
-            if (currentString.Length > longestRun)
-                return currentString.Length;
             else
-                return longestRun;
+            {
+                acc++;
+                charLastSeenDic.Add(s[i], i);
+            }
+            
+            longest = (acc > longest ? acc : longest);
         }
+
+
+        return longest;
+    }
     }
 }
