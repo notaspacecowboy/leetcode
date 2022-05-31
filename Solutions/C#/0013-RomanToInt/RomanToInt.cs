@@ -1,38 +1,30 @@
 using System;
 
-namespace RomanToInt
+int RomanToInt(string s)
 {
-    public class Solution
+    Dictionary<char, int> lookup = new()
     {
-        int[] digit = { 1, 5, 10, 50, 100, 500, 1000 };
-        char[] symbol = { 'I', 'V', 'X', 'L', 'C', 'D', 'M' };
+        ['I'] = 1,
+        ['V'] = 5,
+        ['X'] = 10,
+        ['L'] = 50,
+        ['C'] = 100,
+        ['D'] = 500,
+        ['M'] = 1000
+    };
 
-        public int RomanToInt(string s)
-        {
-            return FindSum(s, 0, symbol.Length - 1);
-        }
-
-        public int FindSum(string s, int i, int j)  
-        {
-            if (i >= s.Length)
-                return 0;
-
-            if (s[i] != symbol[j])
-                return FindSum(s, i, j - 1);
-
-            if (s[i] == symbol[j] && i == s.Length - 1)
-                return digit[j];
-
-            if (s[i] == symbol[j] && (symbol[j] == 'I' || symbol[j] == 'X' || symbol[j] == 'C'))
-            {
-                if (s[i + 1] == symbol[j + 1])
-                    return (digit[j + 1] - digit[j]) + FindSum(s, i + 2, j);
-
-                if (s[i + 1] == symbol[j + 2])
-                    return (digit[j + 2] - digit[j]) + FindSum(s, i + 2, j);
-            }
-
-            return digit[j] + FindSum(s, i + 1, j);
-        }
+    int i = 0, result = 0, current, next;
+    while (i < s.Length - 1)
+    {
+        current = lookup[s[i]];
+        next = lookup[s[i + 1]];
+        if (current < next)
+            result -= current;
+        else
+            result += current;
+        i++;
     }
+
+    result += lookup[s[i]];
+    return result;
 }
