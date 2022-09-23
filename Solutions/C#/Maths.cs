@@ -1,0 +1,212 @@
+﻿namespace LeetCode;
+
+public class Maths
+{
+    #region 007 - Reverse Integer
+
+    public int Reverse(int x)
+    {
+        if (x == 0)
+            return x;
+
+        bool isPositive = x > 0;
+        int result = 0;
+        while (x != 0)
+        {
+            int addon = x % 10;
+            if (isPositive && result > (Int32.MaxValue - addon) / 10)
+                return 0;
+            else if (!isPositive && result < (Int32.MinValue - addon) / 10)
+                return 0;
+
+            result = result * 10 + addon;
+            x /= 10;
+        }
+
+        return result;
+    }
+
+    #endregion
+
+    #region 009 - Palindrome Number
+
+    public bool IsPalindrome(int x)
+    {
+        if (x < 0)
+            return false;
+
+        int palindrome = 0;
+        int current = x;
+        while (current != 0)
+        {
+            int addon = current % 10;
+            if (palindrome > (Int32.MaxValue - addon) / 10)
+                return false;
+
+            palindrome = palindrome * 10 + addon;
+            current /= 10;
+        }
+
+        if (palindrome == x)
+            return true;
+        return false;
+    }
+
+    #endregion
+
+    #region 0029 - Divide Two Integers
+
+    public int Divide(int dividend, int divisor)
+    {
+        if (dividend == 0)
+            return 0;
+
+        if (divisor == 1)
+            return dividend;
+
+        if (dividend == divisor)
+            return 1;
+
+        if (divisor == Int32.MinValue)
+            return 0;
+
+        int result = 0;
+        if (dividend == Int32.MinValue)
+        {
+            if (divisor == -1)
+                return Int32.MaxValue;
+
+            dividend += Math.Abs(divisor);
+            result++;
+        }
+
+
+        bool isNegative = (dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0);
+        dividend = Math.Abs(dividend);
+        divisor = Math.Abs(divisor);
+
+        int count = -1;
+        while (dividend >= divisor)
+        {
+            if(count == 29)
+                Console.WriteLine();
+
+            if (divisor << (count + 1) <= 0 || dividend < divisor << (count + 1))
+            {
+                result += (int)Math.Pow(2, count);
+                dividend -= (divisor << count);
+                count = -1;
+            }
+            else
+                count++;
+        }
+
+        return (isNegative ? -result : result);
+
+    }
+
+    #endregion
+
+    #region 0048 - Rotate Image
+
+    public void Rotate(int[][] matrix)
+    {
+        for (int i = 0; i <= matrix.Length / 2; i++)
+        {
+            for (int j = i; j < matrix.Length - i - 1; j++)
+            {
+                (matrix[i][j], matrix[j][matrix.Length - i - 1], matrix[matrix.Length - i - 1][matrix.Length -j - 1], matrix[matrix.Length - j - 1][i]) =
+                    (matrix[matrix.Length - j - 1][i], matrix[i][j], matrix[j][matrix.Length - i - 1], matrix[matrix.Length - i - 1][matrix.Length - j - 1]);
+
+            }
+        }
+
+        for (int i = 0; i < matrix.Length; i++)
+        {
+            for (int j = 0; j < matrix.Length; j++)
+            {
+                Console.Write($"{matrix[i][j]}  ");
+            }
+
+            Console.WriteLine();
+        }
+    }
+
+    #endregion
+
+    #region 0050 - Pow(x,n)
+
+    public double MyPow(double x, int n)
+    {
+        if (x == 0)
+            return 0;
+        if (x == 1 || n == 0)
+            return 1;
+
+        long count = n;
+        if (count < 0)
+            return 1 / FindPow(x, -n);
+        return FindPow(x, n);
+
+    }
+
+    public double FindPow(double x, int n)
+    {
+        if (n == 1)
+            return x;
+
+        if (n % 2 == 1)
+            return x * FindPow(x * x, (n - 1) / 2);
+
+        return FindPow(x * x, n / 2);
+    }
+
+    #endregion
+
+    #region 0054 - Spiral Matrix
+
+    public IList<int> SpiralOrder(int[][] matrix)
+    {
+        int x = -1, y = 0;
+        int[,] dirs = new int[,]
+        {
+            {0, 1},
+            {1, 0},
+            {0, -1},
+            {-1, 0}
+        };
+
+        int countX = matrix[0].Length, countY = matrix.Length - 1, currentDir = 0;
+        List<int> result = new();
+        while (countX >= 0 && countY >= 0)
+        {
+            if (currentDir % 2 == 0)
+            {
+                for (int i = 0; i < countX; i++)
+                {
+                    x += dirs[currentDir, 1];
+                    y += dirs[currentDir, 0];
+                    result.Add(matrix[y][x]);
+                }
+
+                countX--;
+            }
+            else
+            {
+                for (int i = 0; i < countY; i++)
+                {
+                    x += dirs[currentDir, 1];
+                    y += dirs[currentDir, 0];
+                    result.Add(matrix[y][x]);
+                }
+
+                countY--;
+            }
+            currentDir = (currentDir + 1) % 4;
+        }
+
+        return result;
+    }
+
+    #endregion
+}
