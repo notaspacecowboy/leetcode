@@ -209,4 +209,56 @@ public class Maths
     }
 
     #endregion
+
+    #region 0059 - Spiral Matrix II
+
+    public int[][] GenerateMatrix(int n)
+    {
+        int[][] results = new int[n][];
+        for (int i = 0; i < n; i++)
+            results[i] = new int[n];
+
+        int[] index = new int[] {0, -1};
+        int[][] dirs = new int[][]
+        {
+            new int[] {0, 1},
+            new int[] {1, 0},
+            new int[] {0, -1},
+            new int[] {-1, 0}
+        };
+
+        int columnCount = n, rowCount = n - 1, current = 0, num = 0;
+        while (columnCount >= 0 && rowCount >= 0)
+        {
+            if (current % 2 == 0)
+            {
+                for (int i = 0; i < columnCount; i++)
+                {
+                    index[0] += dirs[current][0];
+                    index[1] += dirs[current][1];
+                    results[index[0]][index[1]] = ++num;
+                }
+
+                --columnCount;
+            }
+            else
+            {
+                for (int i = 0; i < rowCount; i++)
+                {
+                    index[0] += dirs[current][0];
+                    index[1] += dirs[current][1];
+                    results[index[0]][index[1]] = ++num;
+                }
+
+                --rowCount;
+            }
+
+            ++current;
+            current = current % 4;
+        }
+
+        return results;
+    }
+
+    #endregion
 }
