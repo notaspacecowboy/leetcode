@@ -392,4 +392,40 @@ public class Arrays
     }
 
     #endregion
+
+    #region 0057 - Insert Interval
+
+    public int[][] Insert(int[][] intervals, int[] newInterval)
+    {
+        List<int[]> results = new List<int[]>();
+        bool hasAdded = false;
+        for (int i = 0; i < intervals.Length; i++)
+        {
+            if(intervals[i][1] < newInterval[0])
+                results.Add(intervals[i]);
+            else if (intervals[i][0] > newInterval[1])
+            {
+                if (!hasAdded)
+                {
+                    hasAdded = true;
+                    results.Add(newInterval);
+                    results.Add(intervals[i]);
+                }
+                else
+                    results.Add(intervals[i]);
+            }
+            else
+            {
+                newInterval[0] = Math.Min(newInterval[0], intervals[i][0]);
+                newInterval[1] = Math.Max(newInterval[1], intervals[i][1]);
+            }
+        }
+
+        if(!hasAdded)
+            results.Add(newInterval);
+
+        return results.ToArray();
+    }
+
+    #endregion
 }
