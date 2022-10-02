@@ -31,6 +31,7 @@
 - 021 - Merge Two Sorted Lists
 - 023 - Merge K Sorted Lists
 - 024 - Swap Nodes in Pairs
+- 061 - Rotate List
 
 ### [DFS](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DFS.cs)
 
@@ -44,6 +45,8 @@
 
 - 005 - Longest Palindromic Substring
 - 010 - Regular Expression Matching
+- 062 - Unique Paths
+- 063 - Unique Paths II
 
 ### [Greedy](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
@@ -87,5 +90,6 @@
 - 039 - Combination Sum
 - 046 - Permutation
 - 047 - Permutation II
+- 060 - Permutation Sequence
 
 ---
