@@ -1,4 +1,6 @@
-﻿namespace LeetCode;
+﻿using System.Text;
+
+namespace LeetCode;
 
 public class Recursions
 {
@@ -172,6 +174,46 @@ public class Recursions
 
         }
     }
+
+    #endregion
+
+    #region 0060 - Permutation Sequence
+
+    private int current = 0;
+    public string GetPermutation(int n, int k)
+    {
+        StringBuilder sb = new StringBuilder(n);
+        for (int i = 1; i <= n; i++)
+            sb.Append((char)(i + '0'));
+
+        FindPermutation(sb, k, 0);
+        return sb.ToString();
+    }
+
+    bool FindPermutation(StringBuilder sb, int k, int index)
+    {
+        if (index >= sb.Length - 1)
+        {
+            ++current;
+            if (current == k)
+                return true;
+
+            return false;
+        }
+
+        for (int i = index; i < sb.Length; i++)
+        {
+            (sb[index], sb[i]) = (sb[i], sb[index]);
+            if (FindPermutation(sb, k, index + 1))
+                return true;
+
+            (sb[index], sb[i]) = (sb[i], sb[index]);
+        }
+
+        return false;
+    }
+
+
 
     #endregion
 

@@ -1,4 +1,6 @@
-﻿namespace LeetCode;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace LeetCode;
 
 public class LinkedList
 {
@@ -228,5 +230,37 @@ public class LinkedList
         return head;
     }
 
+    #endregion
+
+    #region 0061 - Rotate List
+
+    public ListNode RotateRight(ListNode head, int k)
+    {
+        if (k == 0 || head == null || head.next == null)
+            return head;
+
+        ListNode current = head;
+        int total = 1;
+        while (current.next != null)
+        {
+            total++;
+            current = current.next;
+        }
+
+        current.next = head;
+        k %= total;
+
+        int kFromStart = total - k;
+        current = new ListNode(0, head);   //dummy head
+        while (kFromStart > 0)
+        {
+            kFromStart--;
+            current = current.next;
+        }
+
+        head = current.next;
+        current.next = null;
+        return head;
+    }
     #endregion
 }
