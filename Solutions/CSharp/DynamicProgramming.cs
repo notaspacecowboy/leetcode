@@ -1,4 +1,6 @@
-﻿namespace LeetCode;
+﻿using System.Security.AccessControl;
+
+namespace LeetCode;
 
 public class DynamicProgramming
 {
@@ -89,6 +91,54 @@ public class DynamicProgramming
 
         return dp[s.Length, p.Length];
 
+    }
+
+    #endregion
+
+    #region 0062 - Unique Paths
+
+    public int UniquePaths(int m, int n)
+    {
+        int[,] dp = new int[m + 1, n + 1];
+
+        for (int i = m - 2; i >= 0; i--)
+        {
+            for (int j = n - 2; j >= 0; j--)
+            {
+                if (i == m - 1 && j == n - 1)
+                    dp[i, j] = 1;
+                else
+                    dp[i, j] = dp[i + 1, j] + dp[i, j + 1];
+            }
+        }
+
+        return dp[0, 0];
+    }
+
+    #endregion
+
+    #region 0063 - Unique Paths II
+
+    public int UniquePathsWithObstacles(int[][] obstacleGrid)
+    {
+        int m = obstacleGrid.Length;
+        int n = obstacleGrid[0].Length;
+        int[,] dp = new int[m + 1, n + 1];
+
+        for (int i = m - 1; i >= 0; i--)
+        {
+            for (int j = n - 1; j >= 0; j--)
+            {
+                if (i == m - 1 && j == n - 1)
+                    dp[i, j] = 1;
+                else if (obstacleGrid[i][j] == 1)
+                    dp[i, j] = 0;
+                else
+                dp[i, j] = dp[i + 1, j] + dp[i, j + 1];
+            }
+        }
+
+        return dp[0, 0];
     }
 
     #endregion
