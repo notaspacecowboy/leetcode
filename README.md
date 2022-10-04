@@ -24,6 +24,8 @@
 - 041 - First Missing Positive
 - 042 - Trapping Rain Water
 - 053 - Maximum Subarray
+- 066 - Plus One
+- 067 - Add Binary
 
 ### [Linked List Operations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
 
@@ -47,6 +49,7 @@
 - 010 - Regular Expression Matching
 - 062 - Unique Paths
 - 063 - Unique Paths II
+- 064 - Minimum Path Sum
 
 ### [Greedy](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
