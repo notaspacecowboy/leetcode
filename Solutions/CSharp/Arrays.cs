@@ -1,4 +1,7 @@
-﻿namespace LeetCode;
+﻿using System.Runtime.InteropServices.ComTypes;
+using System.Text;
+
+namespace LeetCode;
 
 public class Arrays
 {
@@ -450,8 +453,43 @@ public class Arrays
         results[0] = 1;
         Array.Copy(digits, 0, results, 1, digits.Length);
         return results;
+    }
 
-        return digits;
+    #endregion
+
+    #region 0067 - Add Binary
+
+    public string AddBinary(string a, string b)
+    {
+        if (a.Length < b.Length)
+            (a, b) = (b, a);
+
+        int i = a.Length - 1, j = b.Length - 1, addOne = 0;
+        string result = "";
+        while (i >= 0 && j >= 0)
+        {
+            int res = (a[i] - '0') + (b[j] - '0') + addOne;
+            addOne = (res > 1 ? 1 : 0);
+            res %= 2;
+
+            result = (char) (res + '0') + result;
+            i--;
+            j--;
+        }
+
+        while (i >= 0)
+        {
+            int res = (a[i] - '0') + addOne;
+            addOne = (res > 1 ? 1 : 0);
+            res %= 2;
+
+            result = (char)(res + '0') + result;
+            i--;
+        }
+
+        if (addOne == 1)
+            return "1" + result;
+        return result;
     }
 
     #endregion
