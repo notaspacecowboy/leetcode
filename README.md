@@ -50,6 +50,7 @@
 - 062 - Unique Paths
 - 063 - Unique Paths II
 - 064 - Minimum Path Sum
+- 070 - Climbing Stairs
 
 ### [Greedy](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
@@ -69,6 +70,7 @@
 - 048 - Rotate Image
 - 050 - Pow(x, n)
 - 054 - Spiral Matrix
+- 069 - Sqrt(x)
 
 ### [Stack](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Stacks.cs)
 
