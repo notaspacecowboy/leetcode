@@ -76,6 +76,7 @@
 
 - 020 - Valid Parenthesis
 - 032 - Longest Valid Parentheses
+- 071 - Simplify Path
 
 ### [String Operations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
 

@@ -380,4 +380,34 @@ public class Strings
     }
 
     #endregion
+
+    #region 0071 - Simplify Path
+
+    public string SimplifyPath(string path)
+    {
+        Stack<string> lookup = new Stack<string>();
+
+        string[] s = path.Split('/');
+
+        int acc = 0;
+        string result = "";
+        for (int i = s.Length - 1; i >= 0; --i)
+        {
+            if (s[i] == "" || s[i] == ".")
+                continue;
+            else if (s[i] == "..")
+                acc++;
+            else if (acc > 0)
+                acc--;
+            else
+                result = "/" + s[i] + result;
+        }
+
+        if (result == "")
+            return "/";
+
+        return result;
+    }
+
+    #endregion
 }
