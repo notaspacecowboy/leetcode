@@ -8,7 +8,9 @@ namespace LeetCode
 {
     public class Sort
     {
-        public void MergeSort<T>(T[] array) where T: IComparable
+        #region merge sort
+
+        public void MergeSort<T>(T[] array) where T : IComparable
         {
             MergeSort(array, 0, array.Length - 1);
         }
@@ -39,7 +41,7 @@ namespace LeetCode
                     tmp[current++] = array[j++];
             }
 
-            while(i <= rightStart - 1)
+            while (i <= rightStart - 1)
                 tmp[current++] = array[i++];
 
             while (j <= end)
@@ -50,5 +52,47 @@ namespace LeetCode
                 array[i] = tmp[current++];
         }
 
+        #endregion
+
+        #region quick sort
+
+        public void QuickSort<T>(T[] array) where T: IComparable
+        {
+            QuickSort(array, 0, array.Length - 1);
+        }
+
+        void QuickSort<T>(T[] array, int start, int end) where T : IComparable
+        {
+            if (start >= end)
+                return;
+
+            int partition = Partition(array, start, end);
+            QuickSort(array, start, partition - 1);
+            QuickSort(array, partition + 1, end);
+        }
+
+        int Partition<T>(T[] array, int start, int end) where T: IComparable
+        {
+            if (start >= end)
+                return start;
+
+            T pivot = array[start];
+            int left = start, right = end;
+            while (left < right)
+            {
+                while (left < right && array[right].CompareTo(pivot) >= 0)
+                    right--;
+                array[left] = array[right];
+
+                while (left < right && array[left].CompareTo(pivot) <= 0)
+                    left++;
+                array[right] = array[left];
+            }
+
+            array[left] = pivot;
+            return left;
+        }
+
+        #endregion
     }
 }

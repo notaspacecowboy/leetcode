@@ -175,4 +175,28 @@ public class DynamicProgramming
 
     #endregion
 
+    #region 0070 - Climbing Stairs
+
+    public int ClimbStairs(int n)
+    {
+        if (n == 1)
+            return 1;
+        if (n == 2)
+            return 2;
+
+        int oneStepBefore = 2;
+        int twoStepBefore = 1;
+        int i = 3, result = 0;
+        while (i <= n)
+        {
+            result = (oneStepBefore + twoStepBefore);
+            twoStepBefore = oneStepBefore;
+            oneStepBefore = result;
+            i++;
+        }
+
+        return result;
+    }
+
+    #endregion
 }

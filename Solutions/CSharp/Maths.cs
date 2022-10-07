@@ -261,4 +261,28 @@ public class Maths
     }
 
     #endregion
+
+    #region 0069 - Sqrt(x)
+
+    public int MySqrt(int x)
+    {
+        long left = 0, right = x, middle = 0;
+        while (left < right)
+        {
+            middle = left + (right - left) / 2;
+            if (middle * middle == x)
+                return (int)middle;
+            else if (middle * middle > x)
+                right = middle - 1;
+            else
+                left = middle + 1;
+        }
+
+        if (left * left > x)
+            --left;
+            
+        return (int)left;
+    }
+
+    #endregion
 }
