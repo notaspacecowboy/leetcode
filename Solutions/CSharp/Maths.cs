@@ -285,4 +285,78 @@ public class Maths
     }
 
     #endregion
+
+    #region 0073 - Set Matrix Zeroes
+
+    public void SetZeroes(int[][] matrix)
+    {
+        bool isColZero = false;
+        bool isRowZero = false;
+        int m = matrix.Length, n = matrix[0].Length;
+        for (int i = 0; i < m; i++)
+            if (matrix[i][0] == 0)
+                isColZero = true;
+
+        for (int i = 0; i < n; i++)
+            if (matrix[0][i] == 0)
+                isRowZero = true;
+
+        for (int i = 1; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (matrix[i][j] == 0)
+                {
+                    matrix[i][0] = matrix[0][j] = 0;
+                }
+            } 
+        }
+
+
+        for (int i = 1; i < m; i++)
+        {
+            for (int j = 1; j < n; j++)
+            {
+                if (matrix[i][0] == 0 || matrix[0][j] == 0)
+                    matrix[i][j] = 0;
+            }
+        }
+
+        for (int i = 0; i < m; i++)
+            if (isColZero)
+                matrix[i][0] = 0;
+
+        for (int i = 0; i < n; i++)
+            if (isRowZero)
+                matrix[0][i] = 0;
+    }
+
+    #endregion
+
+    #region 0074 - Searches a 2D Matrix
+
+    public bool SearchMatrix(int[][] matrix, int target)
+    {
+        int m = matrix.Length, n = matrix[0].Length;
+        if (target < matrix[0][0] || target > matrix[m - 1][n - 1])
+            return false;
+
+        int left = 0, right = m * n - 1, middle = 0;
+        while (left <= right)
+        {
+            middle = left + (right - left) / 2;
+            int row = middle / n;
+            int col = middle % n;
+            if (matrix[row][col] == target)
+                return true;
+            else if (matrix[row][col] < target)
+                left = middle + 1;
+            else
+                right = middle - 1;
+        }
+
+        return false;
+    }
+
+    #endregion
 }

@@ -71,6 +71,8 @@
 - 050 - Pow(x, n)
 - 054 - Spiral Matrix
 - 069 - Sqrt(x)
+- 073 - Set Matrix Zeroes
+- 074 - Searches a 2D Matrix
 
 ### [Stack](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Stacks.cs)
 
