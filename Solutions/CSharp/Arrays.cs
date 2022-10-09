@@ -493,4 +493,29 @@ public class Arrays
     }
 
     #endregion
+
+    #region 0075 - Sort Colors
+
+    public void SortColors(int[] nums)
+    {
+        int low = 0, high = nums.Length - 1;
+        for (int i = low; i <= high;)
+        {
+            if (nums[i] == 1)
+                i++;
+            else if (nums[i] == 0)
+            {
+                (nums[low], nums[i]) = (nums[i], nums[low]);
+                i++;
+                low++;
+            }
+            else
+            {
+                (nums[high], nums[i]) = (nums[i], nums[high]);
+                high--;
+            }
+        }
+    }
+
+    #endregion
 }

@@ -217,4 +217,34 @@ public class Recursions
 
     #endregion
 
+    #region 0077 - Combinations
+
+    public IList<IList<int>> Combine(int n, int k)
+    {
+        List<IList<int>> results = new List<IList<int>>();
+        FindCombine(results, new List<int>(), n, k, 1);
+        return results;
+    }
+
+    public void FindCombine(List<IList<int>> results, List<int> result, int n, int k, int currentIndex)
+    {
+        if (k == 0)
+        {
+            results.Add(new List<int>(result));
+            return;
+        }
+
+        if (n - currentIndex + 1 < k)
+            return;
+
+        for (int i = currentIndex; i <= n - k + 1; i++)
+        {
+            result.Add(i);
+            FindCombine(results, result, n, k - 1, i + 1);
+            result.RemoveAt(result.Count - 1);
+        }
+    }
+
+    #endregion
+
 }
