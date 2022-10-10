@@ -26,6 +26,7 @@
 - 053 - Maximum Subarray
 - 066 - Plus One
 - 067 - Add Binary
+- 080 - Remove Duplicates from Sorted Array II
 
 ### [Linked List Operations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
 
@@ -99,5 +100,7 @@
 - 046 - Permutation
 - 047 - Permutation II
 - 060 - Permutation Sequence
+- 078 - Subsets
+- 079 - Word Count
 
 ---

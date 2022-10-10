@@ -247,4 +247,67 @@ public class Recursions
 
     #endregion
 
+    #region 0078 - Subsets
+
+    public IList<IList<int>> Subsets(int[] nums)
+    {
+        List<IList<int>> allsets = new List<IList<int>>();
+        FindSets(allsets, nums, new List<int>(), 0);
+
+        return allsets;
+    }
+
+    public void FindSets(List<IList<int>> allsets, int[] nums, List<int> currentList, int pos)
+    {
+        allsets.Add(new List<int>(currentList));
+        if (pos == nums.Length)
+        {
+            return;
+        }
+
+        for (int i = pos; i < nums.Length; i++)
+        {
+            currentList.Add(nums[i]);
+            FindSets(allsets, nums, currentList, i + 1);
+            currentList.RemoveAt(currentList.Count - 1);
+        }
+    }
+
+    #endregion
+
+    #region 0079 - Word Count
+
+    public bool Exist(char[][] board, string word)
+    {
+        for (int i = 0; i < board.Length; i++)
+        {
+            for (int j = 0; j < board[i].Length; j++)
+            {
+                if (FindPath(board, word, i, j, 0))
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool FindPath(char[][] board, string word, int x, int y, int wordPos)
+    {
+        if (wordPos == word.Length)
+            return true;
+
+        if (x < 0 || y < 0 || x >= board.Length || y >= board[0].Length || board[x][y] == '*' || board[x][y] != word[wordPos])
+            return false;
+
+        char tmp = board[x][y];
+        board[x][y] = '*';
+        bool found = FindPath(board, word, x + 1, y, wordPos + 1) || FindPath(board, word, x, y + 1, wordPos + 1) ||
+                     FindPath(board, word, x - 1, y, wordPos + 1) || FindPath(board, word, x, y - 1, wordPos + 1);
+        
+        board[x][y] = tmp;
+        return found;
+    }
+
+    #endregion
+
 }

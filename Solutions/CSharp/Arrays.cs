@@ -92,7 +92,7 @@ public class Arrays
 
     #region 0026 - Remove Duplicates from Sorted Array
 
-    public int RemoveDuplicates(int[] nums)
+    public int RemoveDuplicatesI(int[] nums)
     {
         if (nums.Length == 1)
             return 1;
@@ -515,6 +515,32 @@ public class Arrays
                 high--;
             }
         }
+    }
+
+    #endregion
+
+    #region 0080 - Remove Duplicates from Sorted Array II
+
+    public int RemoveDuplicates(int[] nums)
+    {
+        int shadowPos = 0, dupCount = 0, lastElem = nums[0];
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (nums[i] == lastElem)
+                dupCount++;
+            else
+            {
+                lastElem = nums[i];
+                dupCount = 1;
+            }
+
+            if (dupCount <= 2)
+            {
+                nums[shadowPos++] = nums[i];
+            }
+        }
+
+        return shadowPos;
     }
 
     #endregion

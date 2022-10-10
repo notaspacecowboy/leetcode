@@ -113,7 +113,7 @@ public class Strings
     #endregion
 
     #region 0028 - Implement strStr()
-    
+
     public int StrStr(string haystack, string needle)
     {
         int[] next = new int[needle.Length];
