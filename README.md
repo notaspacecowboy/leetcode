@@ -27,6 +27,7 @@
 - 066 - Plus One
 - 067 - Add Binary
 - 080 - Remove Duplicates from Sorted Array II
+- 081 - Search in Rotated Sorted Array II
 
 ### [Linked List Operations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
 
@@ -35,6 +36,7 @@
 - 023 - Merge K Sorted Lists
 - 024 - Swap Nodes in Pairs
 - 061 - Rotate List
+- 082 - Remove Duplicated
 
 ### [DFS](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DFS.cs)
 

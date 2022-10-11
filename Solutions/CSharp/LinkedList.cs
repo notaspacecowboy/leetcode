@@ -263,4 +263,28 @@ public class LinkedList
         return head;
     }
     #endregion
+
+    #region 0082 - Remove Duplicated
+
+    public ListNode DeleteDuplicates(ListNode head)
+    {
+        ListNode dummyHead = new ListNode(int.MinValue, head);
+        ListNode previous = dummyHead, current = head;
+        while (current != null)
+        {
+            while (current.next != null && current.val == current.next.val)
+                current = current.next;
+
+            if (previous.next == current)
+                previous = previous.next;
+            else
+                previous.next = current.next;
+
+            current = current.next;
+        }
+
+        return dummyHead.next;
+    }
+
+    #endregion
 }
