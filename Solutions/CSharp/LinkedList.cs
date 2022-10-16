@@ -287,4 +287,60 @@ public class LinkedList
     }
 
     #endregion
+
+    #region 0083 - Remove Duplicates from Sorted List
+
+    public ListNode DeleteDuplicatesII(ListNode head)
+    {
+        ListNode dummyHead = new ListNode(Int32.MinValue, head), previous = dummyHead, current = head;
+        while (current != null)
+        {
+            if (previous.val == current.val)
+            {
+                previous.next = current.next;
+                current = current.next;
+            }
+            else
+            {
+                previous = previous.next;
+                current = current.next;
+            }
+        }
+
+        return head;
+    }
+
+    #endregion
+
+    #region 0086 - Partition List
+
+    public ListNode Partition(ListNode head, int x)
+    {
+        ListNode dummy1 = new ListNode(0);
+        ListNode dummy2 = new ListNode(0);
+
+        ListNode left = dummy1, right = dummy2;
+        while (head != null)
+        {
+
+            if (head.val < x)
+            {
+                left.next = head;
+                left = left.next;
+            }
+            else
+            {
+                right.next = head;
+                right = right.next;
+            }
+
+            head = head.next;
+        }
+
+        left.next = dummy2.next;
+        return dummy1.next;
+
+    }
+
+    #endregion
 }

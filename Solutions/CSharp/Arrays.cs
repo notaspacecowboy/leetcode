@@ -578,4 +578,25 @@ public class Arrays
     }
 
     #endregion
+
+    #region 0088 - Merge Sorted Array
+
+    public void Merge(int[] nums1, int m, int[] nums2, int n)
+    {
+        int i = m - 1, j = n - 1, current = nums1.Length - 1;
+        while (i >= 0 || j >= 0)
+        {
+            if (i < 0)
+                nums1[current] = nums2[j--];
+            else if (j < 0)
+                nums1[current] = nums1[i--];
+            else if (nums1[i] >= nums2[j])
+                nums1[current] = nums1[i--];
+            else
+                nums1[current] = nums2[j--];
+            current--;
+        }
+    }
+
+    #endregion
 }
