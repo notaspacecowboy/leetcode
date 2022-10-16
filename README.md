@@ -107,5 +107,10 @@
 - 060 - Permutation Sequence
 - 078 - Subsets
 - 079 - Word Count
+- 090 - Subsets II
+
+### [BitOperations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BitOperations.cs)
+
+- 089 - Gray Code
 
 ---

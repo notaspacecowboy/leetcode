@@ -2,7 +2,7 @@
 
 namespace LeetCode;
 
-public class Recursions
+public class BackTracing
 {
 
     #region 0022 - Generate Parentheses
@@ -306,6 +306,51 @@ public class Recursions
         
         board[x][y] = tmp;
         return found;
+    }
+
+    #endregion
+
+    #region 0090 - Subsets II
+
+    private List<IList<int>> allSubsets = new List<IList<int>>() {new List<int>()};
+    public IList<IList<int>> SubsetsWithDup(int[] nums)
+    {
+        Array.Sort(nums);
+        FindSubsetsWithDup(nums, new List<int>(), 0);
+        return allSubsets;
+    }
+
+    private void FindSubsetsWithDup(int[] nums, List<int> current, int pos)
+    {
+        int previous = Int32.MinValue;
+        for (int i = pos; i < nums.Length; i++)
+        {
+            if (nums[i] == previous)
+                continue;
+
+            current.Add(nums[i]);
+            allSubsets.Add(new List<int>(current));
+            FindSubsetsWithDup(nums, current, i + 1);
+            current.RemoveAt(current.Count - 1);
+            previous = nums[i];
+        }
+    }
+
+    #endregion
+
+
+
+
+    #region helper functions
+
+    public static void PrintListInt(IList<int> list)
+    {
+        foreach (var elem in list)
+        {
+            Console.Write($"{elem}, ");
+        }
+
+        Console.WriteLine();
     }
 
     #endregion
