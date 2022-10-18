@@ -179,7 +179,7 @@ public class BackTracing
 
     #region 0060 - Permutation Sequence
 
-    private int current = 0;
+    private int currentCount = 0;
     public string GetPermutation(int n, int k)
     {
         StringBuilder sb = new StringBuilder(n);
@@ -194,8 +194,8 @@ public class BackTracing
     {
         if (index >= sb.Length - 1)
         {
-            ++current;
-            if (current == k)
+            ++currentCount;
+            if (currentCount == k)
                 return true;
 
             return false;
@@ -337,10 +337,7 @@ public class BackTracing
     }
 
     #endregion
-
-
-
-
+    
     #region helper functions
 
     public static void PrintListInt(IList<int> list)

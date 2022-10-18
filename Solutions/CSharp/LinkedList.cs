@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Security.AccessControl;
 
 namespace LeetCode;
 
@@ -340,6 +341,53 @@ public class LinkedList
         left.next = dummy2.next;
         return dummy1.next;
 
+    }
+
+    #endregion
+
+    #region 0092 - Reverse Linked List II
+
+    public ListNode ReverseBetween(ListNode head, int left, int right)
+    {
+        if (left == right)
+            return head;
+
+        var dummyHead = new ListNode(0, head);
+        
+        //point prev to the first node before the node that needs to be reverted
+        var prev = dummyHead;
+        for (int i = 0; i < left - 1; i++)
+            prev = prev.next;
+
+        Console.WriteLine(prev.val);
+        var current = prev.next;
+        var next = current.next;
+
+        for (int i = left; i < right; i++)
+        {
+            current.next = next.next;
+            next.next = prev.next;
+            prev.next = next;
+            next = current.next;
+        }
+
+        return dummyHead.next;
+    }
+
+    #endregion
+
+    #region helper function
+
+    public static void PrintListNode(ListNode head)
+    {
+        while (head != null)
+        {
+            Console.Write($"{head.val} -> ");
+            head = head.next;
+        }
+
+        Console.Write("null");
+        Console.WriteLine();
     }
 
     #endregion

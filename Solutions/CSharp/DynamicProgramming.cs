@@ -199,4 +199,38 @@ public class DynamicProgramming
     }
 
     #endregion
+
+    #region 0091 - Decode Ways
+
+    public int NumDecodings(string s)
+    {
+        int[] dp = new int[s.Length + 1];
+        dp[dp.Length - 1] = 1;
+        dp[dp.Length - 2] = s[s.Length - 1] == '0' ? 0 : 1;
+
+        int current = 0, next = 0;
+        int total = 0;
+        for (int i = s.Length - 2; i >= 0; i--)
+        {
+            current = s[i] - '0';
+            if (current == 0)
+                continue;
+
+            next = s[i + 1] - '0';
+            total = 0;
+            total += dp[i + 1];
+
+            current *= 10;
+            current += next;
+            if (current <= 26)
+                total += dp[i + 2];
+
+            dp[i] = total;
+        }
+
+        return dp[0];
+    }
+
+
+    #endregion
 }

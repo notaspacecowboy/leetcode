@@ -40,6 +40,7 @@
 - 082 - Remove Duplicated
 - 083 - Remove Duplicates From Sorted Array
 - 086 - Partition List
+- 092 - Reverse Linked List II
 
 ### [DFS](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DFS.cs)
 
@@ -57,6 +58,7 @@
 - 063 - Unique Paths II
 - 064 - Minimum Path Sum
 - 070 - Climbing Stairs
+- 091 - Decode Way
 
 ### [Greedy](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
