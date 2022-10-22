@@ -110,6 +110,7 @@
 - 078 - Subsets
 - 079 - Word Count
 - 090 - Subsets II
+- 093 - Restore IP Addresses
 
 ### [BitOperations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BitOperations.cs)
 

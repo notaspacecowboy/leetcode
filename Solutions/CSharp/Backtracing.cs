@@ -337,7 +337,50 @@ public class BackTracing
     }
 
     #endregion
-    
+
+    #region 0093 - Restore IP addresses
+
+    private List<string> resultIPs = new List<string>();
+    public IList<string> RestoreIpAddresses(string s)
+    {
+        BtIP(s, "", 0, 0);
+        return resultIPs;
+    }
+
+    private void BtIP(string s, string current, int pos, int currentIntegers)
+    {
+        if ((currentIntegers == 4 && pos < s.Length) || (currentIntegers < 4 && pos >= s.Length))
+            return;
+        else if (currentIntegers == 4)
+        {
+            resultIPs.Add(current);
+            return;
+        }
+
+        if (s[pos] == '0')
+            return;
+
+        int currentIp = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            if (pos + i >= s.Length || (i != 0 && currentIp == 0))
+                break;
+
+            currentIp = currentIp * 10 + (s[pos + i] - '0');
+            if (currentIp > 255)
+                break;
+
+            string tmp = current;
+            if (currentIntegers != 0)
+                current += '.';
+            current += currentIp.ToString();
+            BtIP(s, current, pos + i + 1, currentIntegers + 1);
+            current = tmp;
+        }
+    }
+
+    #endregion
+
     #region helper functions
 
     public static void PrintListInt(IList<int> list)
