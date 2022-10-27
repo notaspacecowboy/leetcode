@@ -116,4 +116,10 @@
 
 - 089 - Gray Code
 
+### [BinaryTree](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BinaryTree.cs)
+
+- 094 - Binary Tree Inorder Traversal
+- 095 - Unique Binary Search Trees II
+- 096 - Unique Binary Search Trees
+
 ---
