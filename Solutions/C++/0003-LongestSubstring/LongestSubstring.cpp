@@ -1,44 +1,26 @@
 #include <iostream>
 #include <string>
-#include <map>
+#include <unordered_map>
 using namespace  std;
 
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        int longestRun = 0;
-        string currentString = "";
-        map<char, bool> mDic;
-        char temp;
-
-        for (int i = 0; i < s.length(); i++)
-        {
-            temp = s[i];
-        	
-            //if this character is not in the current substring,
-        	//add it to it and put the value at mdic corresponds to this char as true
-            if (!mDic[temp]) {
-                mDic[temp] = true;
-                currentString += temp;
-            }
-
-            //if this char is already in the current substring,
-        	//update the longest substring and the current substring
+        unordered_map<char, int> lookup;
+        int currentLength = 0, longest = 0;
+        for(int i = 0; i < s.length(); i++) {
+            auto lastPosPtr = lookup.find(s[i]);
+            if (lastPosPtr == lookup.end() || i - lastPosPtr->second > currentLength)
+                currentLength++;
             else {
-                if (currentString.length() > longestRun)
-                    longestRun = currentString.length();
-                currentString += temp;
-                int toRemove = 0;
-                for (int j = 0; currentString[j] != temp; j++) {
-                    mDic[currentString[j]] = false;
-                    toRemove++;
-                }
-                currentString = currentString.substr(toRemove + 1);
+                currentLength = i - lastPosPtr->second;
             }
+
+            lookup[s[i]] = i;
+            longest = (currentLength > longest ? currentLength : longest);
         }
-        if (currentString.length() > longestRun)
-            return currentString.length();
-        return longestRun;
+
+        return longest;
     }
 };
 

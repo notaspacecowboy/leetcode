@@ -4,38 +4,26 @@ using namespace std;
 class Solution {
 public:
     string longestPalindrome(string s) {
-        if (s == "")
-            return s;
+        int dp[1000][1000];
+        int longest = 1, from = 0, to = 0;
+        for(int i = s.length() - 1; i >= 0; i--) {
+            dp[i][i] = 1;
+            for(int j = i + 1; j < s.length(); j++) {
+                if(j == i + 1)
+                    dp[i][j] = (s[i] == s[j] ? 2 : 1);
+                else if(s[i] == s[j] && dp[i + 1][j - 1] == j - i - 1)
+                    dp[i][j] = j - i + 1;
+                else {
+                    dp[i][j] = max(max(dp[i + 1][j], dp[i][j - 1]), dp[i + 1][j - 1]);
+                }
 
-        int max = 0;
-        const int len = s.length();
-        string ans = "";
-
-        bool dp[1000][1000];
-        bool flag = false;
-
-        for (int i = 0; i < len; i++)
-        {
-            for (int j = 0; j <= i; j++)
-            {
-                flag = (s[i] == s[j]);
-
-                if (i == j)
-                    dp[j][i] = true;
-                else if (i == j + 1)
-                    dp[j][i] = (flag ? true : false);
-
-                else
-                    dp[j][i] = (dp[j + 1][i - 1] && flag);
-
-                if (dp[j][i] && i - j + 1 > max)
-                {
-                    max = i - j + 1;
-                    ans = s.substr(j, i - j + 1);
+                if(dp[i][j] > longest) {
+                    longest = dp[i][j];
+                    from = i;
+                    to = j;
                 }
             }
         }
-
-        return ans;
+        return s.substr(from, to - from + 1);
     }
 };

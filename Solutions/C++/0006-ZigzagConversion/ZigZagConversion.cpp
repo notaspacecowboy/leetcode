@@ -5,33 +5,26 @@ class Solution {
 public:
     string convert(string s, int numRows)
     {
-        if (numRows == 1 || s.length() < numRows)
+        if(numRows == 1 || s.length() == 1)
             return s;
 
-        string ans = "";
-        bool flag;
-        for (int i = 0; i < numRows; i++)
-        {
-            flag = false;
-            int j = i;
-            while (j < s.length())
-            {
-                ans += s[j];
-                if (i == 0 || i == numRows - 1)
-                    j += 2 * numRows - 2;
+        string res = "";
+        for(int i = 0; i < numRows; i++) {
 
+            int pos = i;
+            bool flip = (i == numRows - 1 ? true : false);
+            while(pos < s.length()) {
+                res += s[pos];
+                if(flip)
+                    pos += (i + 1) * 2 - 2;
                 else
-                {
-                    if (!flag)
-                        j += 2 * numRows - 2 * i - 2;
-                    else
-                        j += 2 * i;
+                    pos += (numRows - i) * 2 - 2;
 
-                    flag = !flag;
-                }
+                if(i != 0 && i != numRows - 1)
+                    flip = !flip;
             }
         }
 
-        return ans;
+        return res;
     }
 };

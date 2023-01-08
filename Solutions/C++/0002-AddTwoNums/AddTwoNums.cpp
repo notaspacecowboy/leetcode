@@ -13,47 +13,84 @@ struct ListNode {
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
-    {   
-        bool addOne = false;
-        ListNode* ans = new ListNode();
-        ListNode* current = ans;
-        ListNode* tail = ans;
-        int x, y;
-        while (l1 != nullptr || l2 != nullptr)
-        {
-            if (l1 != nullptr)
-                x = l1->val;
-            else
-                x = 0;
+    {
+        int addOne = 0;
+        ListNode *dummyHead = new ListNode(), *current = dummyHead;
+        while(l1 != nullptr && l2 != nullptr) {
+            int res = addOne;
+            res += l1->val;
+            res += l2->val;
+            l1 = l1->next;
+            l2 = l2->next;
 
-            if (l2 != nullptr)
-                y = l2->val;
-            else
-                y = 0;
-            current->val = x + y;
-            if (addOne) {
-                current->val++;
-                addOne = false;
-            }
-            if (current->val >= 10)
-            {
-                addOne = true;
-                current->val -= 10;
-            }
+            addOne = res / 10;
+            res %= 10;
 
-            if (l1 != nullptr)
-                l1 = l1->next;
-            if (l2 != nullptr)
-                l2 = l2->next;
-            current->next = new ListNode();
-            tail = current;
+            current->next = new ListNode(res);
             current = current->next;
         }
 
-        if (addOne)
-            current->val = 1;
-        else
-            tail->next = nullptr;
-        return ans;
+        while(l1 != nullptr) {
+            int res = addOne;
+            res += l1->val;
+            l1 = l1->next;
+
+            addOne = (res >= 10 ? 1 : 0);
+            res %= 10;
+
+            current->next = new ListNode(res);
+            current = current->next;
+        }
+
+        while(l2 != nullptr) {
+            int res = addOne;
+            res += l2->val;
+            l2 = l2->next;
+
+            addOne = (res >= 10 ? 1 : 0);
+            res %= 10;
+
+            current->next = new ListNode(res);
+            current = current->next;
+        }
+
+        if(addOne) {
+            current->next = new ListNode(1);
+        }
+
+        return dummyHead->next;
     }
 };
+
+
+
+//ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
+//{
+//    int addOne = 0;
+//    ListNode *head = nullptr, *current = nullptr;
+//    while(l1 != nullptr || l2 != nullptr || addOne) {
+//        int res = addOne;
+//        if(l1 != nullptr) {
+//            res += l1->val;
+//            l1 = l1->next;
+//        }
+//        if(l2 != nullptr) {
+//            res += l2->val;
+//            l2 = l2->next;
+//        }
+//
+//        addOne = (res >= 10 ? 1 : 0);
+//        res %= 10;
+//
+//        if(head == nullptr) {
+//            head = new ListNode(res);
+//            current = head;
+//        }
+//        else {
+//            current->next = new ListNode(res);
+//            current = current->next;
+//        }
+//    }
+//
+//    return head;
+//}

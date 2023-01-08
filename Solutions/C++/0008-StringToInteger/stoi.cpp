@@ -1,40 +1,42 @@
+#include <string>
+using namespace std;
+
+
 class Solution {
 public:
     int myAtoi(string str)
     {
+        long res = 0;
         int i = 0;
-        long ans = 0;
-        int multiplier = 1;
-
-        while (str[i] == ' ')
-            i++;
-
-        if (str[i] == '-') {
-            multiplier = -1;
-            i++;
-        }
-        else if (str[i] == '+')
-            i++;
-
-        while (str[i] >= '0' && str[i] <= '9')
-        {
-            ans *= 10;
-            if (ans > INT_MAX)
+        while(i < str.length()) {
+            if(str[i] != ' ')
                 break;
-            ans += (str[i] - '0');
+
             i++;
         }
 
-        if (ans > INT_MAX && multiplier == 1)
-            return INT_MAX;
+        bool isNegative = false;
+        if(i < str.length() && str[i] == '-')
+        {
+            isNegative = true;
+            i++;
+        }
+        else if(i < str.length() && str[i] == '+')
+            i++;
 
-        if (ans > INT_MAX && multiplier == -1)
-            return INT_MIN;
+        for(i; i < str.length(); i++) {
+            if(str[i] > '9' || str[i] < '0')
+                break;
 
-        if (multiplier == 1)
-            return ans;
+            res *= 10;
+            res += (str[i] - '0');
 
-        else
-            return -ans;
+            if(!isNegative && res > INT_MAX)
+                return INT_MAX;
+            else if(isNegative && -res < INT_MIN)
+                return INT_MIN;
+        }
+
+        return (isNegative ? -res : res);
     }
 };
