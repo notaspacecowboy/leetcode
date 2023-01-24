@@ -25,3 +25,7 @@
 /Solutions/CSharp/obj/LeetCode.csproj.nuget.g.targets
 /Solutions/CSharp/obj/project.assets.json
 /Solutions/CSharp/Solutions.cs
+/Solutions/C++/.idea
+/Solutions/C++/cmake-build-debug
+/Solutions/C++/CMakeLists.txt
+/Solutions/C++/main.cpp
