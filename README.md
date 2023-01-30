@@ -75,6 +75,13 @@
 
 - 088 - Merge Sorted Arrays [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/MergeSortedArray.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
+- 118 - Pascal Triangle [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/PascalTriangle.cpp) 
+
+- 119 - Pascal Triangle II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/PascalTriangleII.cpp) 
+
+- 121 - Best Time To Buy And Sell Stock [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/BestTimeToBuyAndSell.cpp) 
+
+
 
 
 ### Linked List Operations
@@ -330,5 +337,7 @@
 - 114 - Flattern Binary Tree To Linked List [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/FlattenBST.cpp)
 
 - 116 - Populate Next Right Pointer In Each Node [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/NextRightPointer.cpp)
-- 
+
+- 117 - Populate Next Right Pointer In Each Node II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/NextRightPointerII.cpp)
+  
 ---
