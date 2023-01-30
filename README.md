@@ -144,6 +144,8 @@
 
 - 091 - Decode Way [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/DecodeWays.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
 
+- 120 - Triangle [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/Triangle.cpp)
+
 
 
 ### Greedy
