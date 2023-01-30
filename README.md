@@ -2,124 +2,333 @@
 
 ## Topics
 
-### [Hash Table](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/HashTable.cs)
+### Hash Table
 
-- 003 - Longest Substring Without Repeating Characters
-- 012 - Integers to Roman
-- 013 - Roman to Integers
-- 017 - Letter Combinations of a Phone Number
-- 049 - Group Anagrams
+- 003 - Longest Substring Without Repeating Characters [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/HashTable/LongestSubstring.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/HashTable.cs)
 
-### [Array Operations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
-- 001 - Two Sum
-- 011 - Container With Most Water
-- 015 - Three Sum
-- 026 - Remove Duplicates from Sorted Array
-- 027 - Remove Elements
-- 031 - NextPermutation
-- 033 - Searches in Rotated Sorted Array
-- 034 - Find First and Last Position of Element in Sorted Array
-- 035 - Search Insetion Position
-- 041 - First Missing Positive
-- 042 - Trapping Rain Water
-- 053 - Maximum Subarray
-- 066 - Plus One
-- 067 - Add Binary
-- 080 - Remove Duplicates from Sorted Array II
-- 081 - Search in Rotated Sorted Array II
-- 088 - Merge Sorted Arrays
+- 012 - Integers to Roman [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/HashTable/IntegerToRoman.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/HashTable.cs)
 
-### [Linked List Operations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
 
-- 002 - Add Two Numbers
-- 021 - Merge Two Sorted Lists
-- 023 - Merge K Sorted Lists
-- 024 - Swap Nodes in Pairs
-- 061 - Rotate List
-- 082 - Remove Duplicated
-- 083 - Remove Duplicates From Sorted Array
-- 086 - Partition List
-- 092 - Reverse Linked List II
+- 013 - Roman to Integers [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/HashTable/RomanToInteger.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/HashTable.cs)
 
-### [DFS](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DFS.cs)
 
-- 040 - Combination Sum II
+- 017 - Letter Combinations of a Phone Number [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/HashTable/LetterCombinationOfPhoneNumber.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/HashTable.cs)
 
-### [Divide and Conquer](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DivideAndConquer.cs)
 
-- 004 - Median of Two Sorted Arrays
+- 049 - Group Anagrams [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/HashTable/GroupAnagrams.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/HashTable.cs)
 
-### [Dynamic Programming](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
 
-- 005 - Longest Palindromic Substring
-- 010 - Regular Expression Matching
-- 062 - Unique Paths
-- 063 - Unique Paths II
-- 064 - Minimum Path Sum
-- 070 - Climbing Stairs
-- 091 - Decode Way
 
-### [Greedy](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
-- 0045 - Jump Game II
-- 0055 - Jump Game
 
-### [Hash Set](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
 
-- 0036 - Valid Sudoku
-- 0037 - Sudoku Solver
 
-### [Math](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+### Array Operations
+- 001 - Two Sum [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/TwoSums.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
-- 007 - Reverse Integer
-- 009 - Palindrome Number
-- 029 - Divide Two Integers
-- 048 - Rotate Image
-- 050 - Pow(x, n)
-- 054 - Spiral Matrix
-- 069 - Sqrt(x)
-- 073 - Set Matrix Zeroes
-- 074 - Searches a 2D Matrix
 
-### [Stack](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Stacks.cs)
+- 011 - Container With Most Water [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ContainerWithMostWater.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
-- 020 - Valid Parenthesis
-- 032 - Longest Valid Parentheses
-- 071 - Simplify Path
 
-### [String Operations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+- 015 - Three Sum [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ThreeSum.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
-- 006 - Zigzag Conversion
-- 008 - String to Integer
-- 014 - Longest Common Prefix
-- 028 - Implement strStr()
-- 030 - Substring with Concatenation of All Words
-- 038 - Count and Say
-- 043 - Multiply Strings
-- 044 - Wildcard Matching
 
-### [Backtracing](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+- 026 - Remove Duplicates from Sorted Array [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/RemoveDuplicates.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
-- 022 - Generate Parentheses
-- 025 - Reverse Nodes in K-Groups
-- 039 - Combination Sum
-- 046 - Permutation
-- 047 - Permutation II
-- 060 - Permutation Sequence
-- 078 - Subsets
-- 079 - Word Count
-- 090 - Subsets II
-- 093 - Restore IP Addresses
 
-### [BitOperations](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BitOperations.cs)
+- 027 - Remove Elements [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/RemoveElement.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
-- 089 - Gray Code
 
-### [BinaryTree](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BinaryTree.cs)
+- 031 - NextPermutation [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/Permutations.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
 
-- 094 - Binary Tree Inorder Traversal
-- 095 - Unique Binary Search Trees II
-- 096 - Unique Binary Search Trees
 
+- 033 - Searches in Rotated Sorted Array [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/SearchRotatedArray.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 034 - Find First and Last Position of Element in Sorted Array [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/FindElement.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 035 - Search Insetion Position [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/SearchInsertPosition.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 041 - First Missing Positive [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 042 - Trapping Rain Water [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 053 - Maximum Subarray [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/MaximumSubarray.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 066 - Plus One [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/PlusOne.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 067 - Add Binary [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Math/AddBinary.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 080 - Remove Duplicates from Sorted Array II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/RemoveDuplicateII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 081 - Search in Rotated Sorted Array II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/SearchInRotatedArrayII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+- 088 - Merge Sorted Arrays [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/MergeSortedArray.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Arrays.cs)
+
+
+
+### Linked List Operations
+- 002 - Add Two Numbers [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/AddTwoNums.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 021 - Merge Two Sorted Lists [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/MergeTwoSortedLists.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 023 - Merge K Sorted Lists [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 024 - Swap Nodes in Pairs [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/SwapNodesInPairs.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 061 - Rotate List [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/RotateList.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 082 - Remove Duplicated [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/RemoveDuplicates.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 083 - Remove Duplicates From Sorted Array [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/RemovedDuplicatesII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 086 - Partition List [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/PartitionList.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+- 092 - Reverse Linked List II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/ReverseLinkedListII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
+
+
+
+### BFS
+
+- 040 - Combination Sum II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/CombinationSumII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DFS.cs)
+
+### Divide and Conquer
+
+- 004 - Median of Two Sorted Arrays [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DivideAndConquer.cs)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DivideAndConquer.cs)
+
+
+### Dynamic Programming
+
+- 005 - Longest Palindromic Substring [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/LongestPalindromicSubstring.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
+
+
+- 010 - Regular Expression Matching [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/RegularExpressionMatch.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
+
+
+- 062 - Unique Paths [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/UniquePath.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
+
+
+- 063 - Unique Paths II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/UniquePathII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
+
+
+- 064 - Minimum Path Sum [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/MinimumPathSum.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
+
+
+- 070 - Climbing Stairs [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/CliimbingStairs.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
+
+
+- 091 - Decode Way [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/DecodeWays.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
+
+
+
+### Greedy
+
+- 0045 - Jump Game II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/JumpGameII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
+
+
+- 0055 - Jump Game [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/JumpGame.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
+
+
+
+### Hash Set
+
+- 0036 - Valid Sudoku [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ValidSudoku.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
+
+
+
+- 0037 - Sudoku Solver [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
+
+
+
+
+### Math
+
+- 007 - Reverse Integer [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Math/ReverseInteger.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 009 - Palindrome Number [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Math/PalindromeNumber.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 029 - Divide Two Integers [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Math/DivideTwoIntegers.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 048 - Rotate Image [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 050 - Pow(x, n) [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Math/Pow.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 054 - Spiral Matrix [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 069 - Sqrt(x) [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Math/SqrtX.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 073 - Set Matrix Zeroes [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Math/SetMatrixZeros.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+- 074 - Searches a 2D Matrix [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Maths.cs)
+
+
+
+
+### Stack
+
+- 020 - Valid Parenthesis [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Stack/ValidParentheses.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Stacks.cs)
+
+
+- 032 - Longest Valid Parentheses [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Stack/LongestValidParentheses.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Stacks.cs)
+
+
+- 071 - Simplify Path [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Stack/SimplifyPath.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Stacks.cs)
+
+
+
+### String Operations
+
+- 006 - Zigzag Conversion [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Strings/ZigZagConversion.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+- 008 - String to Integer [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+- 014 - Longest Common Prefix [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Strings/LongestCommonPrefix.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+- 028 - Implement strStr() [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+- 030 - Substring with Concatenation of All Words [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+- 038 - Count and Say [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Strings/CountAndSay.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+- 043 - Multiply Strings [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Strings/MultiplyStrings.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+- 044 - Wildcard Matching [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+
+
+
+### Backtracing
+
+- 022 - Generate Parentheses [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/GenerateParentheses.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+
+- 025 - Reverse Nodes in K-Groups [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 039 - Combination Sum [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/CombinationSum.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 046 - Permutation [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/Permutations.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 047 - Permutation II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/PermuteUnique.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 060 - Permutation Sequence [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 078 - Subsets [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/Subsets.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 079 - Word Count [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 090 - Subsets II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/SubsetsII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+- 093 - Restore IP Addresses [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/RestoreIpAddress.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
+
+
+
+### BitOperations
+
+- 089 - Gray Code [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BitOperations.cs)
+
+
+
+### BinaryTree
+
+- 094 - Binary Tree Inorder Traversal [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/BinaryTreeInorderTraversal.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BinaryTree.cs)
+
+
+- 095 - Unique Binary Search Trees II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/UniqueBstII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BinaryTree.cs)
+
+
+- 096 - Unique Binary Search Trees [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/UniqueBstII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BinaryTree.cs)
+
+- 098 - Validate Binary Search Trees [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/ValidateBst.cpp)
+
+- 099 - Recover Binary Search Trees [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/RecoverBst.cpp)
+
+- 100 - Same Tree [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/SameTree.cpp)
+  
+- 101 - Symmetric Trees [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/SymmetricTree.cpp)
+
+- 102 - Binary Tree Level Order Traversal [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/BinaryTreeLevelOrderTraversal.cpp)
+
+- 103 - Binary Tree Zigzag Level Order Traversa [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/BinaryTreeZigzagLevelOrderTraversal.cpp)
+
+- 104 - Maximum Depth Binary Tree [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/MaximumDepth.cpp)
+
+- 105 - Construct Binary Tree From Preorder & Inorder Traversal [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/ConstructBstFromPreorderAndInorder.cpp)
+
+- 106 - Construct Binary Tree From Postorder & Inorder Traversal [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/ConstructBstFromInorderAndPostOrder.cpp)
+
+- 107 - Binary Tree Level Order Traversal II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/BinaryTreeLevelOrderTraversalII.cpp)
+
+- 108 - Convert Sorted Array To Binary Tree [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/SortedArrayToBST.cpp)
+
+- 109 - Convert Sorted List To Binary Tree [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/SortedListToBST.cpp)
+
+- 110 - Balanced Binary Trees [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/BalancedBinaryTree.cpp)
+  
+- 111 - Minimum Depth Of Binary Tree [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/MinDepth.cpp)
+ 
+- 112 - Path Sum [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/PathSum.cpp)
+
+- 113 - Path Sum II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/PathSumII.cpp)
+
+- 114 - Flattern Binary Tree To Linked List [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/FlattenBST.cpp)
+
+- 116 - Populate Next Right Pointer In Each Node [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/NextRightPointer.cpp)
+- 
 ---
