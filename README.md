@@ -81,6 +81,8 @@
 
 - 121 - Best Time To Buy And Sell Stock [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/BestTimeToBuyAndSell.cpp) 
 
+- 121 - Valid Palindrome [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ValidPalindrome.cpp) 
+
 
 
 
@@ -155,7 +157,7 @@
 
 - 0055 - Jump Game [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/JumpGame.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
-
+- 0122 - Best Time to Buy and Sell Stocks II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/BestTimeToBuyAndSellStockII.cpp)
 
 ### Hash Set
 
@@ -341,5 +343,10 @@
 - 116 - Populate Next Right Pointer In Each Node [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/NextRightPointer.cpp)
 
 - 117 - Populate Next Right Pointer In Each Node II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/NextRightPointerII.cpp)
+
+- 129 - Sum Root to Leaf Numbers [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/SumRootToLeafNumbers.cpp)
   
----
+
+### Set
+
+- 128 - Longest Consecutive Sequence [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Set/LongestConsecutiveSequence.cpp) 
