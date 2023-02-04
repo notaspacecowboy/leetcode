@@ -114,6 +114,10 @@
 - 092 - Reverse Linked List II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/ReverseLinkedListII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
 
 
+### DFS
+
+- 130 - Surrounded Region [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DFS/SurroundedRegions.cpp)
+
 
 ### BFS
 
@@ -147,6 +151,7 @@
 - 091 - Decode Way [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/DecodeWays.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DynamicProgramming.cs)
 
 - 120 - Triangle [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/Triangle.cpp)
+
 
 
 
@@ -288,6 +293,7 @@
 
 - 093 - Restore IP Addresses [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/RestoreIpAddress.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
 
+- 131 - Palindrome Partitions [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/PalindromePartition.cpp)
 
 
 ### BitOperations
