@@ -114,6 +114,8 @@
 - 092 - Reverse Linked List II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/ReverseLinkedListII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
 
 
+- 141 - Linked List Cycle [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/LinkedListCycle.cpp)
+
 ### DFS
 
 - 130 - Surrounded Region [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DFS/SurroundedRegions.cpp)
@@ -157,20 +159,22 @@
 
 ### Greedy
 
-- 0045 - Jump Game II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/JumpGameII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
+- 045 - Jump Game II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/JumpGameII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
 
-- 0055 - Jump Game [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/JumpGame.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
+- 055 - Jump Game [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/JumpGame.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Greedy.cs)
 
-- 0122 - Best Time to Buy and Sell Stocks II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/BestTimeToBuyAndSellStockII.cpp)
+- 122 - Best Time to Buy and Sell Stocks II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/BestTimeToBuyAndSellStockII.cpp)
+
+- 134 - Gas Station [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/GasStation.cpp)
 
 ### Hash Set
 
-- 0036 - Valid Sudoku [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ValidSudoku.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
+- 036 - Valid Sudoku [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ValidSudoku.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
 
 
 
-- 0037 - Sudoku Solver [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
+- 037 - Sudoku Solver [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
 
 
 
@@ -356,3 +360,11 @@
 ### Set
 
 - 128 - Longest Consecutive Sequence [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Set/LongestConsecutiveSequence.cpp) 
+
+### Graph
+
+- 128 - Clone Graph [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Graph/CloneGraph.cpp) 
+
+### Bit Operation
+
+- 136 - Single Number [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BitOperation/SingleNumber.cpp) 
