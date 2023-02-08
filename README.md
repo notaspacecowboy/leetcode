@@ -114,6 +114,9 @@
 - 092 - Reverse Linked List II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/ReverseLinkedListII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/LinkedList.cs)
 
 
+- 138 - Copy List With Random Pointer [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/CopyListWithRandomPointer.cpp)
+
+
 - 141 - Linked List Cycle [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/LinkedListCycle.cpp)
 
 ### DFS
@@ -154,6 +157,7 @@
 
 - 120 - Triangle [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/Triangle.cpp)
 
+- 139 - Word Break [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DynamicProgramming/WordBreak.cpp)
 
 
 
@@ -304,6 +308,9 @@
 
 - 089 - Gray Code [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/BitOperations.cs)
 
+- 136 - Single Number [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BitOperation/SingleNumber.cpp)
+
+- 137 - Single Number II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BitOperation/SingleNumberII.cpp)
 
 
 ### BinaryTree
