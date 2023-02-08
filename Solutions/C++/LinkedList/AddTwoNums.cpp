@@ -1,11 +1,8 @@
-struct ListNode {
-     int val;
-     ListNode *next;
-     ListNode() : val(0), next(nullptr) {}
-     ListNode(int x) : val(x), next(nullptr) {}
-     ListNode(int x, ListNode *next) : val(x), next(next) {}
- };
- 
+#include <unordered_set>
+#include <iostream>
+#include "ListNode.h"
+
+using namespace std;
 
 /// <summary>
 /// The idea is to simulate the process of sum two number by hand.
