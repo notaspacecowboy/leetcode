@@ -119,6 +119,13 @@
 
 - 141 - Linked List Cycle [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/LinkedListCycle.cpp)
 
+
+- 142 - Linked List Cycle II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/LinkedListCycleII.cpp)
+
+
+- 143 - Reorder List [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/ReorderList.cpp)
+
+
 ### DFS
 
 - 130 - Surrounded Region [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DFS/SurroundedRegions.cpp)
