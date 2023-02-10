@@ -19,6 +19,7 @@
 - 049 - Group Anagrams [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/HashTable/GroupAnagrams.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/HashTable.cs)
 
 
+- 146 - LRU Cache [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/HashTable/LRUCache.cpp) 
 
 
 
@@ -369,6 +370,10 @@
 - 117 - Populate Next Right Pointer In Each Node II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/NextRightPointerII.cpp)
 
 - 129 - Sum Root to Leaf Numbers [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/SumRootToLeafNumbers.cpp)
+  
+- 144 - Binary Tree Preorder Traversal [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/BinaryTreePreorderTraversal.cpp)
+
+- 145 - Binary Tree Postorder Traversal [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/BinaryTree/BinaryTreePostOrderTraversal.cpp)
   
 
 ### Set
