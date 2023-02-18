@@ -127,6 +127,8 @@
 - 143 - Reorder List [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/ReorderList.cpp)
 
 
+- 143 - Insertion Sort List  [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/LinkedList/InsertionSortList.cpp)
+
 ### DFS
 
 - 130 - Surrounded Region [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DFS/SurroundedRegions.cpp)
