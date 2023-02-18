@@ -3,85 +3,75 @@
 using namespace std;
 
 class LRUCache {
+private:
     struct Node {
         Node(int key, int val, Node* prev = nullptr, Node* next = nullptr)
         : key(key)
         , val(val)
         , prev(prev)
-        , next(next) {}
+        , next(next) {
+        }
 
-        Node* prev;
-        Node* next;
         int key;
         int val;
+        Node* prev;
+        Node* next;
     };
 
 public:
     LRUCache(int capacity)
-    : mKeyIndexMapping()
-    , mHead(nullptr)
-    , mTail(nullptr)
+    : mCount(0)
     , mCapacity(capacity)
-    , mCount(0) {}
+    , mDummyHead(new Node(INT_MIN, INT_MIN))
+    , mDummyTail(new Node(INT_MAX, INT_MAX))
+    , mKeyNodeMapping() {
+        mDummyHead->next = mDummyTail;
+        mDummyTail->prev = mDummyHead;
+    }
 
     int get(int key) {
-        auto found = mKeyIndexMapping.find(key);
-        if(found == mKeyIndexMapping.end())
+        auto found = mKeyNodeMapping.find(key);
+        if(found == mKeyNodeMapping.end())
             return -1;
 
-        auto current = found->second;
-        if(current == mTail)
-            return current->val;
+        auto node = found->second;
+        node->prev->next = node->next;
+        node->next->prev = node->prev;
+        node->prev = mDummyHead;
+        node->next = mDummyHead->next;
+        mDummyHead->next->prev = node;
+        mDummyHead->next = node;
 
-
-        if(current == mHead) {
-            mHead = mHead->next;
-            mHead->prev = nullptr;
-        }
-        else {
-            current->prev->next = current->next;
-            current->next->prev = current->prev;
-        }
-
-        mTail->next = current;
-        current->prev = mTail;
-        current->next = nullptr;
-        mTail = current;
-
-        return current->val;
+        return node->val;
     }
 
     void put(int key, int value) {
-        auto found = mKeyIndexMapping.find(key);
-        if(found != mKeyIndexMapping.end()) {
-            mKeyIndexMapping[key]->val = value;
+        auto found = mKeyNodeMapping.find(key);
+        if(found != mKeyNodeMapping.end()) {
+            auto node = found->second;
+            node->val = value;
             get(key);
             return;
         }
 
         if(mCount == mCapacity) {
-            mKeyIndexMapping.erase(mHead->key);
-            mHead = mHead->next;
+            int keyToRemove = mDummyTail->key;
+            mDummyTail->prev = mDummyTail->prev->prev;
+            mDummyTail->prev->next = mDummyTail;
+            mKeyNodeMapping.erase(keyToRemove);
+            mCount -= 1;
         }
-        else
-            mCount++;
-
-        if(mHead == nullptr) {
-            mHead = new Node(key, value, nullptr, nullptr);
-            mTail = mHead;
-        }
-        else {
-            mTail->next = new Node(key, value, mTail, nullptr);
-            mTail = mTail->next;
-        }
-
-        mKeyIndexMapping.insert(make_pair(key, mTail));
+        Node* node = new Node(key, value, mDummyHead, mDummyHead->next);
+        node->next->prev = node;
+        node->prev->next = node;
+        mKeyNodeMapping.emplace(key, node);
+        mCount += 1;
     }
 
 private:
-    unordered_map<int, Node*> mKeyIndexMapping;
-    Node* mHead;
-    Node* mTail;
-    int mCapacity;
     int mCount;
+    int mCapacity;
+    Node* mDummyHead;
+    Node* mDummyTail;
+    unordered_map<int, Node*> mKeyNodeMapping;
 };
