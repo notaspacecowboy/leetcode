@@ -184,6 +184,8 @@
 
 - 134 - Gas Station [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/GasStation.cpp)
 
+- 152 - Maximum Product Subarray [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Greedy/MaxProductSubarray.cpp)
+
 ### Hash Set
 
 - 036 - Valid Sudoku [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ValidSudoku.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Hashsets.cs)
@@ -277,6 +279,8 @@
 
 
 - 044 - Wildcard Matching [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Strings.cs)
+
+- 151 - Reverse Words In String [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Strings/ReverseWordsInString.cpp)
 
 
 
