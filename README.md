@@ -82,7 +82,7 @@
 
 - 121 - Best Time To Buy And Sell Stock [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/BestTimeToBuyAndSell.cpp) 
 
-- 121 - Valid Palindrome [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ValidPalindrome.cpp) 
+- 125 - Valid Palindrome [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Arrays/ValidPalindrome.cpp) 
 
 
 
