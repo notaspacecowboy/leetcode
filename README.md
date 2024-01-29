@@ -135,11 +135,6 @@
 
 - 130 - Surrounded Region [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/DFS/SurroundedRegions.cpp)
 
-
-### BFS
-
-- 040 - Combination Sum II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/CombinationSumII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DFS.cs)
-
 ### Divide and Conquer
 
 - 004 - Median of Two Sorted Arrays [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DivideAndConquer.cs)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DivideAndConquer.cs)
@@ -318,6 +313,9 @@
 - 093 - Restore IP Addresses [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/RestoreIpAddress.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/Backtracing.cs)
 
 - 131 - Palindrome Partitions [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/PalindromePartition.cpp)
+
+- 040 - Combination Sum II [\[C++\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/C%2B%2B/Backtracing/CombinationSumII.cpp)  [\[C#\]](https://github.com/notaspacecowboy/leetcode/blob/master/Solutions/CSharp/DFS.cs)
+
 
 
 ### BitOperations
